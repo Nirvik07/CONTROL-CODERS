@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <script src="https://kit.fontawesome.com/427bd0507f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/clean.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+         <div class="navbar">
+                <div class="logo"> <img src="{{ url_for('static', filename='assets/images/mylogo1.png') }}" alt="logo" id="agent"></div>
+                 <nav>
+                <ul id="MenuItems">
+                     <li><a href="/">Home</a></li>
+                     <li><a href="/about">About Us</a></li>
+                     <li><a href="/contact">Contact Us</a></li>
+                     <li><a href="/products">Products</a></li>
+                     <li><a href="/profile">Account</a></li>
+                </ul>
+                <img src="{{ url_for('static', filename='assets/images/bag icon.png') }}" alt="cart" height="50px" class="bag-icon">
+                <img src="{{ url_for('static', filename='assets/images/menu 2.png') }}" height="50px" class="menu-icon" onclick="menutoggle()">
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="title">Our Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='assets/images/men\'s cap 2.jpg') }}" alt="product" height="300px">
+            <h4>Men's Baseball cap</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                
+                </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='assets/images/men-s-cotton-shirt-500x500.jpg') }}" alt="product">
+            <h4>Men's cotton shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='assets/images/sport.jpg') }}" alt="product">
+            <h4>Men's sports shoes</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>$60.00</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='assets/images/blue-print-turquoise-men-s-shirt.jpg') }}" alt="product">
+            <h4>Formal shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                </div>
+            <p>$20.00</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='assets/images/watch -----.jpg') }}" alt="product" height="270px">
+            <h4>Men's cool watch</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                
+                </div>
+            <p>$30.00</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='assets/images/men watch.jpeg') }}" alt="product">
+            <h4>Watch</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='assets/images/cap.jpg') }}" alt="product">
+            <h4>Mens Basic cap</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>$10.00</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='assets/images/belt 2.jpg') }}" alt="product">
+            <h4>Men's Belt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='assets/images/belts.jpg') }}" alt="product">
+            <h4>Men's set of Belts</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                </div>
+            <p>$100.00</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='assets/images/baseball jacket.jpg') }}"  alt="product">
+            <h4>Men's sports jacket</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                </div>
+            <p>$70.00</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='images/leather-jacket-tan-edinburgh-p234-1052_zoom.jpg') }}" alt="product">
+            <h4>Men's leather jacket</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='assets/images/shirt -0.jpg') }}" alt="product">
+            <h4>Men's formal shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="{{ url_for('static', filename='assets/images/shoes red.jpg') }}" alt="product">
+            <h4>Men's shoes</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                </div>
+            <p>$50.00</p>
+        </div>
+    </div>
+
+
+
+
+     
+</body>
+</html>
